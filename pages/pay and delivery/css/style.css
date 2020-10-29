@@ -1,0 +1,123 @@
+header.fixed~main {
+    margin-top: 100px;
+}
+
+.banner {
+    max-height: 800px;
+}
+
+main>.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_us>.content_wrap .info {
+    max-width: 660px !important;
+    padding: 0 24px !important;
+}
+
+@media(max-width:820px) {
+    .banner .img_wrapper {
+        min-height: 350px;
+        max-height: 350px;
+    }
+    .banner .img_wrapper img {
+        width: auto;
+        max-width: unset;
+        max-height: 350px;
+    }
+}
+
+.contacts {
+    padding: 0 24px;
+}
+
+.contacts>.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Noto Serif';
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 24px 0;
+}
+
+.contacts>* {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacts .body>.column {
+    flex-grow: 1;
+    max-width: 630px;
+    min-width: 630px;
+}
+
+.contacts .body>.column:first-child {
+    margin-right: 30px;
+}
+
+@media(max-width:1440px) {
+    .contacts .body>.column {
+        flex-grow: 1;
+        min-width: 550px;
+        max-width: calc(50% - 30px);
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1300px) {
+    .contacts .body>.column {
+        max-width: 350px;
+        margin-right: 24px;
+        margin-bottom: 40px;
+    }
+    .contacts .body {
+        flex-wrap: wrap;
+    }
+}
+
+.contacts .body>.column>.header {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #F07C00;
+}
+
+.contacts .body>.column>.text_wrapper {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.contacts ul.post_links {
+    margin-top: 48px;
+    justify-content: flex-start;
+}
+
+.contacts ul.post_links>li {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts ul.post_links>li:last-child {
+    margin-right: 0;
+}
+
+.contacts ul.post_links>li a.ui {
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #376A98;
+}
+
+.contacts ul.post_links>li a.ui:hover {
+    color: #235581;
+}

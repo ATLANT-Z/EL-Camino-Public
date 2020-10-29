@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+   <link rel="stylesheet" href="../../css/common/style.css" type="text/css">
+   <link rel="stylesheet" href="../../css/common/style-menu.css" type="text/css">
+   <link rel="stylesheet" href="../../css/common/style-header.css" type="text/css">
+   <link rel="stylesheet" href="../../css/common/style-footer.css" type="text/css">
+   <link rel="stylesheet" href="../../css/FA/css/font-awesome.min.css" type="text/css">
+
+   <script src="../../js/jQuery/jquery-3.4.1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+
+   <title>Main</title>
+</head>
+
+<body>
+   <header class="">
+      <div class="top row">
+         <ul class="horizontal_list">
+            <li class="down_list for_clients">
+               <span class="text">Клиентам</span>
+               <span class="ico_wrapper img_svg stroke">
+                  <img src="../../icons/Vector-down.svg" alt="">
+               </span>
+               <div class="popup_down">
+                  <ul>
+                     <li>
+                        <a href="javascript:void(0);">
+                           Стать партнером
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0);">
+                           Гарантия и сервис
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0);">
+                           Оплата и доставка
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0);">
+                           Контакты
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0);">
+                           Акции
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="javascript:void(0);">
+                  <span class="ico_wrapper">
+                     <img src="../../icons/clock-1.svg" alt="">
+                  </span>
+                  <span class="text">пн-пт 8:00-17:00</span>
+               </a>
+            </li>
+            <li>
+               <a href="javascript:void(0);">
+                  <span class="ico_wrapper">
+                     <img src="../../icons/phone-call 1.svg" alt="">
+                  </span>
+                  <span class="text">063 123 45 67</span>
+               </a>
+            </li>
+         </ul>
+         <div class="img_wrapper logo dark">
+            <img src="../../images/Logo_Dark.svg" alt="">
+         </div>
+         <div class="img_wrapper logo light">
+            <img src="../../images/Logo_Light.svg" alt="">
+         </div>
+         <ul class="horizontal_list">
+            <li class="search_btn">
+               <form class="search_wrap">
+                  <input type="text" placeholder="Поиск">
+                  <input type="submit" class="d-none" id="hSearchBtn">
+               </form>
+               <label>
+                  <span class="ico_wrapper">
+                     <img src="../../icons/magnifying-glass.svg" alt="">
+                  </span>
+               </label>
+            </li>
+            <li>
+               <a class="top_show_count" data-count="12" href="javascript:void(0);">
+                  <span class="ico_wrapper img_svg">
+                     <img src="../../icons/CompareEmpty.svg" alt="">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a class="top_show_count" data-count="12" href="javascript:void(0);">
+                  <span class="ico_wrapper img_svg">
+                     <img src="../../icons/shopping-cart 1.svg" alt="">
+                  </span>
+               </a>
+            </li>
+            <li class="down_list login">
+               <a href="javascript:void(0);">
+                  <span class="ico_wrapper img_svg">
+                     <img src="../../icons/avatar.svg" alt="">
+                  </span>
+               </a>
+               <div class="popup_down">
+                  <div class="body">
+                     <ul>
+                        <li>
+                           <a href="javascript:void(0);">
+                              Избранное (0)
+                           </a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0);">
+                              Сравнение (0)
+                           </a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0);">
+                              Мои отзывы
+                           </a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0);">
+                              Личные данные
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="footer">
+                     <div class="wrapper notAuth">
+                        <a id="loginBtn" class="text call_login_dialog" href="javascript:void(0);">
+                           Войти
+                        </a>
+                        <a id="registrationBtn" class="text call_registration_dialog" href="javascript:void(0);">
+                           Регистрация
+                        </a>
+                     </div>
+                     <form class="wrapper isAuth d-none">
+                        <a id="userName" class="text" href="javascript:void(0);">
+                           Татьяна Донева
+                        </a>
+                        <label for="logoutBtn" class="text logoutBtn" href="javascript:void(0);">
+                           Выйти
+                           <input type="submit" id="logoutBtn" class="d-none">
+                        </label>
+                     </form>
+                  </div>
+               </div>
+            </li>
+            <li class="down_list lang">
+               <span class="text">рус</span>
+               <span class="ico_wrapper img_svg stroke">
+                  <img src="../../icons/Vector-down.svg" alt="">
+               </span>
+               <form action="" class="popup_down">
+                  <ul>
+                     <li>
+                        <button class="text">
+                           Укр
+                        </button>
+                     </li>
+                  </ul>
+               </form>
+            </li>
+         </ul>
+      </div>
+      <nav>
+         <ul class="horizontal_list categories down_line href">
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Коляски
+               </a>
+               <div class="info_wrapper">
+                  <div class="info category popup">
+                     <div class="row top">
+                        <span class="ico_wrapper close_popup_btn">
+                           <img src="../../icons/close.svg" alt="">
+                        </span>
+                     </div>
+                     <div class="img_wrapper">
+                        <img src="../../images/kol.gif" alt="">
+                     </div>
+                     <div class="info_text">
+                        <div class="row header">
+                           <span class="text">
+                              Коляски для детей
+                           </span>
+                        </div>
+                        <div class="description">
+                           <p class="text">
+                              Коляски для детей заметно отличаются по строению и изначально проектируются
+                              таким образом, чтобы соответствовать разным потребностям покупателей. В
+                              первую очередь, необходимо подумать о колесах. Если дороги в районе
+                              оставляют желать лучшего, разумно будет сделать упор на повышенную
+                              проходимость и дополнительную мягкость резины.
+                           </p>
+                        </div>
+                        <div class="row">
+                           <a href="javascript:void(0);" class="btn_my v_2">
+                              Перейти в раздел
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Автокресла
+               </a>
+               <div class="info_wrapper">
+                  <div class="info category popup">
+                     <div class="row top">
+                        <span class="ico_wrapper close_popup_btn">
+                           <img src="../../icons/close.svg" alt="">
+                        </span>
+                     </div>
+                     <div class="img_wrapper">
+                        <img src="../../images/Category.png" alt="">
+                     </div>
+                     <div class="info_text">
+                        <div class="row header">
+                           <span class="text">
+                              Коляски для детей
+                           </span>
+                        </div>
+                        <div class="description">
+                           <p class="text">
+                              Коляски для детей заметно отличаются по строению и изначально проектируются
+                              таким образом, чтобы соответствовать разным потребностям покупателей. В
+                              первую очередь, необходимо подумать о колесах. Если дороги в районе
+                              оставляют желать лучшего, разумно будет сделать упор на повышенную
+                              проходимость и дополнительную мягкость резины.
+                           </p>
+                        </div>
+                        <div class="row">
+                           <a href="javascript:void(0);" class="btn_my v_2">
+                              Перейти в раздел
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Стульчики для кормления
+               </a>
+               <div class="info_wrapper">
+                  <div class="info category popup">
+                     <div class="row top">
+                        <span class="ico_wrapper close_popup_btn">
+                           <img src="../../icons/close.svg" alt="">
+                        </span>
+                     </div>
+                     <div class="img_wrapper">
+                        <img src="../../images/Category2.png" alt="">
+                     </div>
+                     <div class="info_text">
+                        <div class="row header">
+                           <span class="text">
+                              Коляски для детей
+                           </span>
+                        </div>
+                        <div class="list_wrapper">
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0);">
+                                    Электромобили
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0);">
+                                    Беговелы
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0);">
+                                    Карты
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="row">
+                           <a href="javascript:void(0);" class="btn_my v_2">
+                              Перейти в раздел
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Ходунки
+               </a>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Кроватки и манежи
+               </a>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Качели-шезлонги
+               </a>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Мебель
+               </a>
+            </li>
+            <li class="popup_btn">
+               <a href="javascript:void(0);">
+                  Транспорт
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <div class="footer row d-none">
+         <div class="row">
+            <ul class="horizontal_list nav_pages">
+               <li>
+                  <a href="javascript:void(0);">
+                     Главная
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <div id="phoneBtn" class="popup_btn">
+      <div class="img_wrapper">
+         <img src="../../icons/call.svg" alt="">
+      </div>
+      <div class="img_wrapper hover">
+         <img src="../../icons/call_hover.svg" alt="">
+      </div>
+      <div class="popup">
+         <div class="top row">
+            <div class="img_wrapper close_popup_btn">
+               <img src="../../icons/close.svg" alt="">
+            </div>
+         </div>
+         <div class="body">
+            <div class="header row">
+               Оставьте свой номер телефона, и мы Вам перезвоним в рабочее время
+            </div>
+            <div class="time row">
+               Пн.-Пт. с 8:00 до 17:00
+            </div>
+            <form method="" action="" class="row input_text_wrapper">
+               <input type="tel" class="pop" value="+38 (0" name="phoneNum">
+               <label for="callMe">
+                  Жду звонка!
+               </label>
+               <input type="submit" id="callMe" class="d-none">
+            </form>
+            <div class="footer row">
+               <p>
+                  Нажимая на кнопку, Вы соглашаетесь с
+                  <a class="ui" href="javascript:void(0);">
+                     Договором публичной оферты
+                  </a>
+                  и
+                  <a class="ui" href="javascript:void(0);">
+                     Политикой конфиденциальности
+                  </a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main>
+      <section class="main_banner">
+         <div class="slider">
+            <div class="slider__slides">
+               <div class="slide s--active">
+                  <div class="slide__inner">
+                     <div class="img_wrapper">
+                        <img src="images/MainBanner_1.png" alt="">
+                     </div>
+                     <div class="slide__content">
+                        <div class="info">
+                           <h3 class="header">
+                              Коляска детская 2 в 1 ME 1069 ALLIANCE DENIM BEIGE
+                           </h3>
+                           <a class="btn_my" href="javascript:void(0);">
+                              Узнать подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="slide__inner">
+                     <div class="img_wrapper">
+                        <img src="images/MainBanner_2.png" alt="">
+                     </div>
+                     <div class="slide__content">
+                        <div class="info">
+                           <h3 class="header">
+                              Коляска детская 2 в 1 ME 1069 ALLIANCE DENIM BEIGE
+                           </h3>
+                           <a class="btn_my" href="javascript:void(0);">
+                              Узнать подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="slide__inner">
+                     <div class="img_wrapper">
+                        <img src="images/MainBanner_3.png" alt="">
+                     </div>
+                     <div class="slide__content">
+                        <div class="info">
+                           <h3 class="header">
+                              Коляска детская 2 в 1 ME 1069 ALLIANCE DENIM BEIGE
+                           </h3>
+                           <a class="btn_my" href="javascript:void(0);">
+                              Узнать подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="slide__inner">
+                     <div class="img_wrapper">
+                        <img src="images/MainBanner_4.png" alt="">
+                     </div>
+                     <div class="slide__content">
+                        <div class="info">
+                           <h3 class="header">
+                              Колясочки
+                           </h3>
+                           <a class="btn_my" href="javascript:void(0);">
+                              Узнать подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide s--prev">
+                  <div class="slide__inner">
+                     <div class="img_wrapper">
+                        <img src="images/MainBanner_5.png" alt="">
+                     </div>
+                     <div class="slide__content">
+                        <div class="info">
+                           <h3 class="header">
+                              Заголовок длинннннннннннннный
+                           </h3>
+                           <a class="btn_my" href="javascript:void(0);">
+                              Узнать подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- slides end -->
+            <div class="slider__control">
+               <div class="slider__control-line"></div>
+               <div class="slider__control-line"></div>
+            </div>
+            <div class="slider__control slider__control--right m--right">
+               <div class="slider__control-line"></div>
+               <div class="slider__control-line"></div>
+            </div>
+         </div>
+         <div class="socials">
+            <ul>
+               <li>
+                  <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                     <img src="../../icons/socials/Intsagram.svg" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                     <img src="../../icons/socials/Facebook.svg" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                     <img src="../../icons/socials/YouTube.svg" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                     <img src="../../icons/socials/tiktok.svg" alt="">
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="count_wrapper">
+            <ul class="horizontal_list">
+            </ul>
+         </div>
+         <div class="bottom_rect"></div>
+      </section>
+      <section class="s_gallery">
+         <div class="section_header row top">
+            <div class="sub-header">
+               для вас
+            </div>
+            <div class="header">
+               Наш выбор
+            </div>
+            <div class="category_selector">
+               <ul class="horizontal_list">
+                  <li class="selected new">Новинки</li>
+                  <li class="sail">Акции</li>
+                  <li class="top">Топ продаж</li>
+               </ul>
+            </div>
+         </div>
+         <div class="body">
+            <aside>
+               <div class="top row">
+                  <a href="javascript:void(0);" class="link_btn">
+                     <span class="text">
+                        Посмотреть всё
+                     </span>
+                  </a>
+               </div>
+               <div class="arrows">
+                  <div class="arrow right_arrow img_wrapper">
+                     <img src="images/icons/VectorRight.svg" alt="">
+                  </div>
+                  <div class="arrow left_arrow img_wrapper">
+                     <img src="images/icons/VectorLeft.svg" alt="">
+                  </div>
+               </div>
+               <div class="progress">
+                  <div class="row">
+                     <span class="current">01</span>
+                     <span class="total">05</span>
+                  </div>
+                  <div class="bar_wrap">
+                     <div class="bar"></div>
+                  </div>
+               </div>
+            </aside>
+            <ul class="gallery_tile gallery_wrapper">
+               <li data-status-type="new">
+                  <a href="#" class="tile product">
+                     <div class="row top">
+                        <span class="status new">
+                           Новинка
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="new">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status new">
+                           Новинка
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="new">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status new">
+                           Новинка
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="sail">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status sail">
+                           Акция
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="sail">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status sail">
+                           Акция
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="sail">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status sail">
+                           Акция
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              4199,66 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="top">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status top">
+                           Топ продаж
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              3254 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="top">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status top">
+                           Топ продаж
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              3254 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li data-status-type="top">
+                  <a href="javascript:void(0);" class="tile product">
+                     <div class="row top">
+                        <span class="status top">
+                           Топ продаж
+                        </span>
+                        <ul class="tools horizontal_list">
+                           <li>
+                              <button type="button" class="compare ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/CompareEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/CompareFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                           <li>
+                              <button type="button" class="wish ico_btn" onclick="return false;">
+                                 <span class="ico_wrapper img_svg">
+                                    <img src="../../icons/HeartEmpty.svg" alt="">
+                                 </span>
+                                 <span class="ico_wrapper img_svg active">
+                                    <img src="../../icons/HeartFill.svg" alt="">
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="img_block">
+                        <div class="img_wrapper">
+                           <img src="images/prod-1.png" alt="">
+                        </div>
+                        <div class="row stars">
+                           <ul class="rate">
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[0]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[1]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[2]" class="d-none">
+                                    <img src="../../icons/StarFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[3]" class="d-none">
+                                    <img src="../../icons/StarHalfFill.svg" alt="">
+                                 </label>
+                              </li>
+                              <li>
+                                 <label class="ico-wrapper" onclick="$('input',this)[0].click(); preventDefault();">
+                                    <input type="radio" name="rate" value="rate[4]" class="d-none">
+                                    <img src="../../icons/StarEmpty.svg" alt="">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row name">
+                        <span class="text">
+                           КВАДРОЦИКЛ HB-EATV 1000Q-5ST(MP3) V2
+                        </span>
+                     </div>
+                     <div class="row buy">
+                        <div class="p_block">
+                           <span class="new_price">
+                              3254 грн
+                           </span>
+                           <span class="price">
+                              3254 грн
+                           </span>
+                        </div>
+                        <div class="btn_my buy_btn">
+                           Купить
+                        </div>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="parallax_2  p_1">
+         <div class="header">
+            С чего всё начиналось?
+         </div>
+         <img src="images/parallax_p1.jpg" alt="" data-speed="-1" class="img_parallax">
+      </section>
+      <section class="el_camino">
+         <div class="content_wrap">
+            <div class="info">
+               <div class="header">
+                  <div class="img_wrapper">
+                     <img src="images/El_Camino.svg" alt="">
+                  </div>
+               </div>
+               <div class="body">
+                  <div class="block">
+                     <div class="text_wrapper">
+                        <p class="text">
+                           El Camino в переводе с испанского означает “путь”. Это путь любви и заботы, который
+                           прокладывает каждая мама в жизни для своего ребенка, основанный на желании дать
+                           своему
+                           малышу все самое лучшее, уберечь от неудобств и помочь ему расти в более комфортном,
+                           безопасном и радостном мире .
+                           <br>
+                           <br>
+                           Мы прошли этот путь для вас , чтоб улучшить повседневную жизнь родителей и малыша.
+                        </p>
+                     </div>
+                     <div class="row">
+                        <a href="javascript:void(0);" class="link_btn">
+                           <span class="text">
+                              Читать дальше
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="img_block">
+                  <div class="img_wrapper main">
+                     <img src="images/banner1.png" alt="">
+                  </div>
+                  <div class="img_wrapper add">
+                     <img src="images/BigCirc.svg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="a_slide news">
+         <div class="section_header row top">
+            <div class="sub-header">
+               популярные
+            </div>
+            <div class="header">
+               Новости
+            </div>
+            <div class="row flex-end">
+               <a href="javascript:void(0);" class="link_btn">
+                  <span class="text">
+                     Все новости
+                  </span>
+               </a>
+            </div>
+         </div>
+         <div class="body">
+            <a href="javascript:void(0);" class="big_tile">
+               <div class="img_wrapper">
+                  <img src="images/InfoSlide.png" alt="">
+               </div>
+               <div class="info">
+                  <div class="row date">
+                     <span class="text">
+                        04 апреля 2020
+                     </span>
+                  </div>
+                  <div class="block_text">
+                     <h4 class="header">
+                        Гедонизм осмысляет дедуктивный метод.
+                     </h4>
+                     <p class="text">
+                        Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный
+                        парадокс. Гедонизм осмысляет дедуктивный метод. Структурализм абстрактен...
+                     </p>
+                  </div>
+                  <div class="row">
+                     <span class="link_btn">
+                        <span class="text">Читать дальше</span>
+                     </span>
+                  </div>
+               </div>
+            </a>
+            <div class="gallery">
+               <a class="tile" href="javascript:void(0);">
+                  <div class="bg_img img_wrapper">
+                     <img src="images/News-1.png" alt="">
+                  </div>
+                  <div class="info">
+                     <div class="row date">
+                        <span class="text">
+                           04 апреля 2020
+                        </span>
+                     </div>
+                     <div class="row header">
+                        <h4 class="text">
+                           Детские автокресла-залог безопасности
+                        </h4>
+                     </div>
+                     <div class="row">
+                        <span class="link_btn white">
+                           <span class="text">Читать дальше</span>
+                        </span>
+                     </div>
+                  </div>
+               </a>
+               <a class="tile" href="javascript:void(0);">
+                  <div class="bg_img img_wrapper">
+                     <img src="images/News-2.png" alt="">
+                  </div>
+                  <div class="info">
+                     <div class="row date">
+                        <span class="text">
+                           04 апреля 2020
+                        </span>
+                     </div>
+                     <div class="row header">
+                        <h4 class="text">
+                           Детские автокресла-залог безопасности
+                        </h4>
+                     </div>
+                     <div class="row">
+                        <span class="link_btn white">
+                           <span class="text">Читать дальше</span>
+                        </span>
+                     </div>
+                  </div>
+               </a>
+               <a class="tile" href="javascript:void(0);">
+                  <div class="bg_img img_wrapper">
+                     <img src="images/News-3.png" alt="">
+                  </div>
+                  <div class="info">
+                     <div class="row date">
+                        <span class="text">
+                           04 апреля 2020
+                        </span>
+                     </div>
+                     <div class="row header">
+                        <h4 class="text">
+                           Детские автокресла-залог безопасности
+                        </h4>
+                     </div>
+                     <div class="row">
+                        <span class="link_btn white">
+                           <span class="text">Читать дальше</span>
+                        </span>
+                     </div>
+                  </div>
+               </a>
+               <a class="tile" href="javascript:void(0);">
+                  <div class="bg_img img_wrapper">
+                     <img src="images/News-4.png" alt="">
+                  </div>
+                  <div class="info">
+                     <div class="row date">
+                        <span class="text">
+                           04 апреля 2020
+                        </span>
+                     </div>
+                     <div class="row header">
+                        <h4 class="text">
+                           Детские автокресла-залог безопасности
+                        </h4>
+                     </div>
+                     <div class="row">
+                        <span class="link_btn white">
+                           <span class="text">Читать дальше</span>
+                        </span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="a_slide about_us">
+         <div class="top row">
+            <h3 class="header">
+               Официальный интернет-магазин El Camino
+            </h3>
+            <h4 class="sub-header">
+               Наше основное качество - это надежность! Так как мы являемся прямым поставщиком товаров для ваших
+               детей
+            </h4>
+         </div>
+         <div class="row">
+            <ul class="horizontal_list">
+               <li>
+                  <div class="img_header">
+                     <div class="img_wrapper img_1">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="img_wrapper img_2">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="number">
+                        4
+                     </div>
+                  </div>
+                  <div class="header">
+                     <p class="text">
+                        Наш бренд уже 4 года представлен на рынке детских товаров
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="img_header">
+                     <div class="img_wrapper img_1">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="img_wrapper img_2">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="number">
+                        90
+                     </div>
+                  </div>
+                  <div class="header">
+                     <p class="text">
+                        Мы предоставляем 90 дней гарантийного обслуживания
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="img_header">
+                     <div class="img_wrapper img_1">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="img_wrapper img_2">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="number">
+                        40
+                     </div>
+                  </div>
+                  <div class="header">
+                     <p class="text">
+                        Мы сотрудничаем с более чем 40 надежными фабриками-партнерами
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="img_header">
+                     <div class="img_wrapper img_1">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="img_wrapper img_2">
+                        <img src="images/icons/circ.svg" alt="">
+                     </div>
+                     <div class="number">
+                        50
+                     </div>
+                  </div>
+                  <div class="header">
+                     <p class="text">
+                        Мы отобрали более 50 лучших моделей товаров для Вашего ребёнка
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="contact_us">
+         <div class="content_wrap">
+            <div class="info">
+               <p class="text">
+                  Компания-владелец бренда на «детском» рынке уже более 18 лет, и занимает позицию к рупнейшего
+                  оптового поставщика детских игрушек. Если Вы заинтересованы в партнёрстве, всю нужную информацию
+                  вы
+                  найдете в разделах
+                  <a href="javascript:void(0);" class="ui">
+                     оптовым
+                  </a>
+                  и
+                  <a href="javascript:void(0);" class="ui">
+                     розничным
+                  </a>
+                  клиентам.
+               </p>
+               <p class="hint">
+                  Для получения консультации, заполните, пожалуйста,
+                  форму обратной связи.
+               </p>
+            </div>
+            <form method="" action="">
+               <div class="header">
+                  <span class="text">
+                     Оставьте свои контакты и мы с Вами свяжемся в кратчайшие сроки
+                  </span>
+               </div>
+               <div class="body">
+                  <div class="ui_select">
+                     <label for="">Выберите вид торговли*</label>
+                     <div class="view">
+                        <input type="text" value="Дропшиппинг" name="typeSell" class="view_input" readonly>
+                        <span class="ico_wrapper img_svg">
+                           <img src="../../icons/Vector-down.svg" alt="">
+                        </span>
+                     </div>
+                     <ul class="options">
+                        <li>
+                           Дропшиппинг
+                        </li>
+                        <li>
+                           Оптовая продажа по скидке, скидончик скидоооочка
+                        </li>
+                        <li>
+                           Нологи
+                        </li>
+                        <li>
+                           Дропшиппинг
+                        </li>
+                        <li>
+                           Оптовая продажа по скидке, скидончик скидоооочка
+                        </li>
+                        <li>
+                           Нологи
+                        </li>
+                     </ul>
+                  </div>
+                  <input type="text" class="ui" placeholder="Ваше имя" name="name">
+                  <input type="tel" class="ui" placeholder="Телефон" name="phoneNum">
+                  <textarea placeholder="Ваше сообщение" name="comment" id="" cols="30" rows="3"></textarea>
+               </div>
+               <div class="footer">
+                  <label for="contactMe" class="btn_my">
+                     Отправить
+                  </label>
+                  <input id="contactMe" type="submit" class="d-none">
+               </div>
+            </form>
+         </div>
+      </section>
+      <div id="user_pop_dialog" class="pop_dialog">
+         <div class="wrap">
+            <div class="window">
+               <form class="var login">
+                  <div class="header">
+                     <span class="text">
+                        Войти на сайт
+                     </span>
+                     <div class="ico_wrapper img_svg close_dialog_btn">
+                        <img src="../../icons/close.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="body">
+                     <div class="row error">
+                        E-mail или пароль указаны неверно
+                     </div>
+                     <div class="input_wrapper" data-error="E-mail должен содержать символ @">
+                        <input type="text" class="ui light" placeholder="E-mail:" pattern=".+@.+.+">
+                     </div>
+                     <div class="input_wrapper show_error" data-error="Пароль поломался">
+                        <input type="text" class="ui light" placeholder="Пароль:">
+                     </div>
+                     <div class="footer">
+                        <a id="dialogRemPass" onclick="showRememberPassDialog();" href="javascript:void(0);">
+                           Забыли пароль?
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer">
+                     <input type="submit" class="sub_btn" value="Войти" class="d-none">
+                     <div class="change_window" onclick="showRegistrationDialog();">
+                        Зарегистрироваться
+                     </div>
+                  </div>
+               </form>
+               <form class="var remember_password">
+                  <div class="header">
+                     <span class="text">
+                        Войти на сайт
+                     </span>
+                     <div class="ico_wrapper img_svg close_dialog_btn">
+                        <img src="../../icons/close.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="body">
+                     <div class="row title">
+                        Если вы забыли пароль, введите адрес электронной почты Вашей учетной записи. Ссылка для
+                        смены пароля придет к Вам на E-mail.
+                     </div>
+                     <div class="row error">
+                     </div>
+                     <div class="input_wrapper" data-error="E-mail должен содержать символ @">
+                        <input type="text" class="ui light" placeholder="E-mail:" pattern=".+@.+.+">
+                     </div>
+                  </div>
+                  <div class="footer">
+                     <input type="submit" class="sub_btn" value="Войти" class="d-none">
+                     <div class="change_window" onclick="showRegistrationDialog();">
+                        Зарегистрироваться
+                     </div>
+                  </div>
+               </form>
+               <form class="var registration">
+                  <div class="header">
+                     <span class="text">
+                        Войти на сайт
+                     </span>
+                     <div class="ico_wrapper img_svg close_dialog_btn">
+                        <img src="../../icons/close.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="body">
+                     <div class="row error">
+                     </div>
+                     <div class="input_wrapper" data-error="E-mail должен содержать символ @">
+                        <input type="text" class="ui light" placeholder="E-mail:" pattern=".+@.+.+">
+                     </div>
+                     <div class="input_wrapper" data-error="E-mail должен содержать символ @">
+                        <input type="text" class="ui light" placeholder="E-mail:" pattern=".+@.+.+">
+                     </div>
+                     <div class="input_wrapper" data-error="E-mail должен содержать символ @">
+                        <input type="text" class="ui light" placeholder="E-mail:" pattern=".+@.+.+">
+                     </div>
+                     <div class="footer">
+                        <input type="checkbox" class="ui orange light" name="" id="dialogAgreeReg">
+                        <label for="dialogAgreeReg" class="text">
+                           Соглашаюсь с
+                           <a class="ui my" href="javascript:void(0);">
+                              Договором публичной оферты
+                           </a>
+                           и
+                           <a class="ui my" href="javascript:void(0);">
+                              Политикой конфиденциальности
+                           </a>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="footer">
+                     <input type="submit" class="sub_btn" value="Зарегистрироваться" class="d-none">
+                     <div class="change_window" onclick="showLoginDialog();">
+                        Войти
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="bg"></div>
+         </div>
+      </div>
+   </main>
+
+
+   <footer class="parallax">
+      <ul class="horizontal_list">
+         <li class="column">
+            <div class="header">
+               <a href="javascript:void(0);" class="text">
+                  Каталог
+               </a>
+            </div>
+            <ul class="links">
+               <li>
+                  <a href="javascript:void(0);">
+                     Коляски
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Автокресла
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Стульчики для кормления
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Ходунки
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Кроватки и манежи
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Качели-шезлонги
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Мебель
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Транспорт
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Акции
+                  </a>
+               </li>
+            </ul>
+         </li>
+         <li class="column">
+            <div class="header">
+               <a href="javascript:void(0);" class="text">
+                  О Компании
+               </a>
+            </div>
+            <ul class="links">
+               <li>
+                  <a href="javascript:void(0);">
+                     Стать партнером
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Оплата и доставка
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Политика конфиденциальности
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Договор публичной оферты
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Контакты
+                  </a>
+               </li>
+            </ul>
+         </li>
+         <li class="column">
+            <div class="header">
+               <a href="javascript:void(0);" class="text">
+                  Сервис и поддержка
+               </a>
+            </div>
+            <ul class="links">
+               <li>
+                  <a href="javascript:void(0);">
+                     FAQ
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Гарантия и сервис
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);">
+                     Инструкции
+                  </a>
+               </li>
+            </ul>
+         </li>
+         <li class="column">
+            <div class="header">
+               <a href="javascript:void(0);" class="text">
+                  Новости
+               </a>
+            </div>
+         </li>
+         <li class="column subscribe">
+            <div class="header">
+               <a href="javascript:void(0);" class="text">
+                  Рассылка
+               </a>
+            </div>
+            <div class="content">
+               <form action="" method="">
+                  <input type="email" value="E-mail" name="email" pattern=".+@.+.+">
+                  <label for="subscribeBtn" class="btn_my">
+                     Подписаться
+                  </label>
+                  <input id="subscribeBtn" type="submit" class="d-none" value="Подписаться">
+               </form>
+               <ul class="horizontal_list socials">
+                  <li>
+                     <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                        <img src="../../icons/socials/Intsagram.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                        <img src="../../icons/socials/Facebook.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                        <img src="../../icons/socials/YouTube.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="ico_wrapper img_svg">
+                        <img src="../../icons/socials/tiktok.svg" alt="">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </li>
+      </ul>
+      <div class="parallax-layer parallax-layer__1" data-parallax-deep="300"></div>
+      <p class="copyright">2020</p>
+   </footer>
+
+   <script src="js/script.js"></script>
+   <script src="../../js/common/menu.js"></script>
+   <script src="../../js/common/header.js"></script>
+   <script src="../../js/common/footer.js"></script>
+   <script src="../../js/common/script.js"></script>
+</body>
+
+</html>

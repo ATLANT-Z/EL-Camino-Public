@@ -1,0 +1,126 @@
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 50px 10%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+}
+
+footer .parallax-layer__1 {
+    background-image: url(Bg-footer.png);
+}
+
+footer>ul.horizontal_list {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .column {
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+footer .column:last-child {
+    margin-right: 0;
+}
+
+footer .column>.header {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+footer .column>.links>li {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+}
+
+footer .column>.links>li a {
+    color: #ffffff;
+}
+
+footer .column>.links>li:last-child {
+    padding-bottom: 0;
+}
+
+footer .column>.links>li:hover {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+footer .column>.links>li a {
+    transition: .0s;
+}
+
+/* footer .column>.links>li:hover a {
+    font-weight: 500;
+} */
+
+footer .column.subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .column.subscribe form input[type='email'] {
+    padding: 12px 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: text;
+}
+
+footer .column.subscribe form input[type='email']:focus {
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer .column.subscribe .socials {
+    margin-top: 44px;
+}
+
+footer .column.subscribe .socials>li {
+    margin-right: 21px;
+}
+
+footer .column.subscribe .socials>li:last-child {
+    margin-right: 0;
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media(max-width:1480px) {
+    footer .column {
+        flex-grow: 1;
+        max-width: 50%;
+    }
+    footer {
+        padding: 50px 24px;
+    }
+}
+
+@media(max-width:980px) {
+    footer .column {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:680px) {
+    footer .column {
+        width: 100%;
+    }
+}

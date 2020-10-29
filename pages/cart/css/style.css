@@ -1,0 +1,232 @@
+main {
+    position: relative;
+    padding: 160px 21px 80px;
+}
+
+header .footer.row>.row {
+    max-width: 100% !important;
+}
+
+main>.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>.content>* {
+    width: 100%;
+}
+
+.delete_btn {
+    width: 32px;
+    height: 32px;
+    color: #C4C4C4;
+    cursor: pointer;
+}
+
+.delete_btn:hover path {
+    fill: #376A98 !important;
+}
+
+.delete_btn:active path {
+    fill: #2F5B83 !important;
+}
+
+main>.content>.header {
+    font-size: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 24px;
+}
+
+main>.content>.header ul>li {
+    padding: 13px 0;
+    border-right: 1px solid #376A98;
+}
+
+main>.content>.header ul>li:last-child {
+    border-right: none;
+}
+
+main>.content>.header ul, main>.content>.body .card>ul {
+    display: flex;
+    align-items: center;
+}
+
+main>.content>.header ul>li, main>.content>.body .card>ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>.content>.header ul>li:nth-child(1),
+/**/
+
+main>.content>.body .card>ul>li:nth-child(1) {
+    width: 47.6%;
+}
+
+main>.content>.header ul>li:nth-child(2),
+/**/
+
+main>.content>.body .card>ul>li:nth-child(2) {
+    width: 14.8%;
+}
+
+main>.content>.header ul>li:nth-child(3),
+/**/
+
+main>.content>.body .card>ul>li:nth-child(3) {
+    width: 14.8%;
+}
+
+main>.content>.header ul>li:nth-child(4),
+/**/
+
+main>.content>.body .card>ul>li:nth-child(4) {
+    width: 14.8%;
+}
+
+main>.content>.header ul>li:nth-child(5),
+/**/
+
+main>.content>.body .card>ul>li:nth-child(5) {
+    width: 7.7%;
+}
+
+/* BODY*/
+
+/* BODY*/
+
+/* BODY*/
+
+/* BODY*/
+
+/* BODY*/
+
+main>.content>.body .card {
+    display: block;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+main>.content>.body .card:last-child {
+    margin-bottom: 0;
+}
+
+main>.content>.body .card:hover {
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.05);
+}
+
+main>.content>.body .card>ul>li {
+    display: flex;
+    align-items: center;
+}
+
+main>.content>.body .card>ul>li .img_wrapper.main {
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 180px;
+    min-height: 180px;
+    margin: 10px 0 10px 24px;
+}
+
+main>.content>.body .card>ul>li .header>.title {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #376A98;
+    margin-bottom: 16px;
+}
+
+main>.content>.body .card>ul>li .header>.article {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main>.content>.body .card>ul>li .price {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+main>.content>.body .card>ul>li .sum {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+label {
+    cursor: pointer;
+}
+
+main>.content>.body .card>ul>li .delete_btn>.img_wrapper {
+    max-width: 32px;
+    max-height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+/* FOOTER */
+
+/* FOOTER */
+
+/* FOOTER */
+
+/* FOOTER */
+
+main>.content>.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 81px;
+}
+
+main>.content>.footer>* {
+    display: flex;
+    align-items: center;
+}
+
+main>.content>.footer>.left {
+    align-self: flex-end;
+    margin-left: 48px;
+}
+
+main>.content>.footer>.left>* {
+    margin-right: 24px;
+}
+
+main>.content>.footer>.left>*:last-child {
+    margin-right: 0;
+}
+
+/*RIGHT*/
+
+main>.content>.footer>.right {
+    flex-direction: column;
+}
+
+main>.content>.footer>.right>.total {
+    margin-bottom: 16px;
+}
+
+main>.content>.footer>.right .total>.text {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-right: 41px;
+}
+
+main>.content>.footer>.right .total>.sum {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+main>.content>.footer>.right .btn_my {
+    width: 100%;
+}

@@ -1,0 +1,302 @@
+main {
+    position: relative;
+    padding: 140px 0 80px;
+}
+
+header .footer.row>.row {
+    max-width: 100% !important;
+}
+
+main>.galleries {
+    padding: 0 24px;
+}
+
+main>.galleries>.gallery_block {
+    margin-top: 50px !important;
+}
+
+main>.header {
+    left: 292px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+main>.header>* {
+    margin-right: 24px;
+}
+
+main>.header>*:last-child {
+    margin-right: 0;
+}
+
+main>.header>*:last-child {
+    margin-right: 0;
+}
+
+#addNew {
+    padding: 12px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 24px;
+}
+
+main>.compare {
+    position: relative;
+    display: flex;
+}
+
+.fixed_row {
+    top: 190px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border: 1px solid #F07C00;
+    transition: 0s;
+}
+
+.fixed_row.fixed {
+    position: fixed;
+}
+
+.compare aside {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.compare aside>* {
+    padding: 0 24px;
+}
+
+.compare aside>.header, .compare .right .column>.header {
+    height: 200px;
+}
+
+.compare aside .header>.title {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 16px 0;
+}
+
+.compare aside .header>.radio_block {
+    margin-bottom: 16px;
+}
+
+.compare aside .header>.radio_block>.row {
+    margin-bottom: 8px;
+}
+
+.compare aside .header>.radio_block>.row:last-child {
+    margin-bottom: 0;
+}
+
+.compare aside .header>.radio_block input[type="radio"]+label {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0s;
+    cursor: pointer;
+}
+
+.compare aside .header>.radio_block input[type="radio"]:checked+label {
+    font-weight: 600;
+}
+
+.compare aside .body>ul {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.compare aside .body>ul>li, .compare .right .body>ul>li {
+    padding: 12px 24px;
+    margin: 0 -24px;
+}
+
+.compare aside .body>ul>li.hover, .compare .right .body>ul>li.hover {
+    background-color: rgba(240, 124, 0, 0.05);
+}
+
+.compare aside .body>ul, .compare .right .body>ul {
+    margin-top: 12px;
+}
+
+.compare .right {
+    width: 100%;
+    max-width: calc(100% - 280px);
+    max-width: unset !important;
+    display: flex;
+    overflow: hidden;
+}
+
+.compare .right .column {
+    min-width: 420px;
+    max-width: 420px;
+    transition: 0s;
+}
+
+.compare .right .column>.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.compare .right .column>* {
+    padding: 0 24px;
+}
+
+.compare .right .column>.header .row {
+    width: 100%;
+    display: flex;
+}
+
+.compare .right .column>.header .top.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.compare .right .column>.header .top.row .img_wrapper {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.compare .right .column>.header .row .img_wrapper {
+    height: 80px;
+    width: 80px;
+}
+
+.compare .right .column>.header .row .title {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #376A98;
+    margin-left: 8px;
+}
+
+.compare .right .column>.header .row.footer {
+    padding: 8px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.compare .right .column>.header .row.footer .price {
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-right: 24px;
+}
+
+/*ARROWS*/
+
+.compare .right .arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 300px;
+    font-size: 28px;
+    color: #F07C00;
+}
+
+.compare .right {
+    position: relative;
+}
+
+.compare .right .arrows.fixed {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    left: auto;
+    width: 900px;
+}
+
+.compare .right .arrows .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    padding: .2rem;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.171);
+    z-index: 20;
+    line-height: 0;
+}
+
+.compare .right .arrows .arrow img {
+    width: 45px;
+    height: 45px;
+}
+
+.compare .right .arrows .arrow svg {
+    width: 16px;
+    height: 32px;
+}
+
+.compare .right .arrows .arrow path {
+    fill: transparent !important;
+}
+
+.compare .right .arrows .arrow path {
+    stroke: #F07C00 !important;
+}
+
+.compare .right .arrows .arrow g {
+    stroke: #F07C00 !important;
+}
+
+.compare aside .header, .compare .right .column .header {
+    transition: 0s;
+}
+
+.compare aside .header {
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.compare .right .column .header {
+    min-width: 420px;
+    max-width: 420px;
+    transition: 0s;
+}
+
+.compare aside .header>.back_to_office {
+    width: auto;
+    display: none;
+    padding: 12px 4px;
+    margin: 12px -10px;
+    font-size: 16px;
+}
+
+.compare aside .body.params, .compare .right .column .body.params {
+    transition: 0s;
+}
+
+.compare aside.fixed .body.params, .compare .right .column.fixed .body.params {
+    margin-top: 200px;
+}
+
+.compare aside.fixed .header, .compare .right .column.fixed .header {
+    margin-top: -122px;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+
+.compare aside.fixed .header>.back_to_office {
+    display: flex;
+}
+
+.compare aside.fixed .header>.title {
+    display: none;
+}
